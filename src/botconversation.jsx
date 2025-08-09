@@ -25,7 +25,7 @@ export default function BotConversation() {
     abortControllerRef.current = controller;
 
     try {
-      const res = await fetch("http://localhost:3001/api/brainrot-stream", {
+      const res = await fetch("https://tspmoai-backen.onrender.com/api/brainrot-stream", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input }),
